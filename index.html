@@ -1,34 +1,41 @@
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
 <link rel="stylesheet" href="style.css">
 
-<script src="style.js"></script>
+<script src="script.js"></script>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Biodata Saya</h1>
+    <div class="container">
+        <h1>Biodata Saya</h1>
 
-    <img src="candra.jpg" alt="Foto Profil" width="200">
+        <img src="candra.jpg" alt="Foto Profil" width="200">
 
-    <p>
-        Email: <a href="https://www.yandex.com" target="_blank">proscandra7@gmail.com</a><br>
-        Phone: 081775251596<br>
-        GitHub: <a href="https://www.yandex.com" target="_blank">https://github.com/candra100-byte/index.html</a>
-    </p>
+        <p>
+            Email: <a href="mailto:proscandra7@gmail.com" target="_blank">proscandra7@gmail.com</a><br>
+            Phone: 081775251596<br>
+            GitHub: <a href="https://github.com/candra100-byte" target="_blank">https://github.com/candra100-byte</a>
+        </p>
 
-    <h2>Hubungi Saya</h2>
-    <form 
-        <label>Nama:</label><br>
-        <input type="text" name="nama"><br><br>
+        <h2>Hubungi Saya</h2>
+        <form method="POST" action="#">
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required><br><br>
 
-        <label>Email:</label><br>
-        <input type="email" name="email"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required><br><br>
 
-        <label>Pesan:</label><br>
-        <textarea name="pesan" rows="4"></textarea><br><br>
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda di sini" required></textarea><br><br>
 
-        <input type="submit" value="Kirim">
-    </form>
+            <input type="submit" value="Kirim">
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
